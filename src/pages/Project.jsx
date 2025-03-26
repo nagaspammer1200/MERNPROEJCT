@@ -29,7 +29,7 @@ function Project() {
     <React.Fragment>
         <Navbar/>
         <div className="items-center bg-black text-white">
-          <h1 className="p-3 font-semibold text-center">Project Reports</h1>
+          <h1 className="p-3 font-semibold text-center text-4xl">Project Reports</h1>
             <div className="grid grid-cols-3 gap-3 ps-8">
               {projectSeminar.map((item) => (
                   <ProjectCard key={item._id} Title={item.title} Link1={item.link1} />

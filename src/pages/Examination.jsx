@@ -120,21 +120,21 @@ function Examination() {
     <React.Fragment>
         <Navbar/>
         <div className="items-center bg-black text-white">
-            <h1 className="p-3 font-semibold text-center">First Series Examinations</h1>
+            <h1 className="p-3 font-semibold text-center text-4xl">First Series Examinations</h1>
             <div className="grid grid-cols-3 gap-3 ps-8 mb-2">
                 {firstSeries.map((item) => (
                   <ExamCard key={item._id} ExamName={item.subjectName} Semester={item.semester} Time1={item.time1}   Link1={item.link1} />
               ))}             
             </div>
             <hr />
-            <h1 className="p-3 font-semibold text-center mt-3">Second Series Examinations</h1>
+            <h1 className="p-3 font-semibold text-center mt-3 text-4xl">Second Series Examinations</h1>
             <div className="grid grid-cols-3 gap-3 ps-8 mb-2">
             {secondSeries.map((item) => (
                   <ExamCard key={item._id} ExamName={item.subjectName} Semester={item.semester} Time1={item.time1}   Link1={item.link1} />
               ))}  
             </div>
             <hr />
-            <h1 className="p-3 font-semibold text-center mt-3">Lab Questions</h1>
+            <h1 className="p-3 font-semibold text-center mt-3 text-4xl">Lab Questions</h1>
             <div className="grid grid-cols-3 gap-3 ps-8 mb-2">
             {labQuestions.map((item) => (
                   <ExamCard key={item._id} ExamName={item.subjectName} Semester={item.semester} Time1={item.time1}   Link1={item.link1} />
